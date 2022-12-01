@@ -18,7 +18,8 @@ try {
       value: 0,
     }
   );
-  console.log(`The highest calorie value is: ${result.highestValue}`);
+  const highestValue = Math.max(result.highestValue, result.value);
+  console.log(`The highest calorie value is: ${highestValue}`);
 } catch (err) {
   console.error(err);
 }
